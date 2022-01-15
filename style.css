@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("https://images.unsplash.com/photo-1610552050890-fe99536c2615?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=907&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+.container {
+  background-color: rgb(228, 204, 172);
+  width: 300px;
+  padding: 1rem;
+  position: relative;
+  border-radius: 20px;
+}
+
+h1,
+h3,
+p {
+  text-transform: capitalize;
+  transition: 0.5s ease;
+}
+
+.city {
+  width: 85%;
+  padding: 10px 20px;
+  border-radius: 20px;
+  outline: none;
+  border: 1px solid white;
+  transition: 0.5s ease;
+}
+
+.town-time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s ease;
+}
+
+.town {
+  font-weight: bold;
+}
+
+.icon-condition {
+  display: flex;
+  justify-content: flex-start;
+  transition: 0.5s ease;
+}
+
+.icon {
+  width: 3rem;
+  transition: 0.5s ease;
+}
+
+.temp {
+  position: relative;
+  transition: 0.5s ease;
+}
+
+.temperature {
+  text-align: center;
+  font-weight: 500;
+  font-size: 3rem;
+  transition: 0.5s ease;
+}
+
+.min-max-temp {
+  position: absolute;
+  right: 80px;
+  bottom: -40px;
+  transition: 0.5s ease;
+}
+
+.wind {
+  margin-top: 3rem;
+  transition: 0.5s ease;
+}
