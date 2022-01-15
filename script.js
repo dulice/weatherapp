@@ -37,7 +37,7 @@ $("#city").on("keyup", function(e) {
     if(e.key === "Enter") {   
         cityName = e.target.value;
         weatherApp();
-        $("#city").val("");
+        $("#city").val(""); 
     }    
 })
 
