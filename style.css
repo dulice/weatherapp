@@ -10,21 +10,30 @@ body {
   justify-content: center;
   align-items: center;
   font-family: sans-serif;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
 .container {
   background-color: rgb(228, 204, 172);
-  width: 300px;
+  width: 350px;
+  height: 500px;
   padding: 1rem;
-  position: relative;
   border-radius: 20px;
+  overflow-y: scroll;
 }
 
-h1,
-h3,
-p {
-  text-transform: capitalize;
-  transition: 0.5s ease;
+.card {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  box-sizing: border-box;
+  margin: 0.5rem 0;
+}
+
+.form-submit {
+  position: relative;
 }
 
 .city {
@@ -33,6 +42,17 @@ p {
   border-radius: 20px;
   outline: none;
   border: 1px solid white;
+}
+
+.submit {
+  position: absolute;
+  right: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 0 20px 20px 0;
+  padding: 8px;
+  background-color: rgb(228, 204, 172);
+  border-color: rgb(228, 204, 172);
 }
 
 .town-time {
@@ -77,7 +97,56 @@ p {
   transition: 0.5s ease;
 }
 
-.wind {
-  margin-top: 3rem;
-  transition: 0.5s ease;
+.wrapper {
+  overflow: hidden;
+  padding-top: 1rem;
+}
+
+.progress {
+  position: relative;
+  margin: auto;
+  width: 200px;
+  height: 100px;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  border: 3px solid white;
+  border-bottom: 0;
+
+}
+
+.progressing {
+  width: 200px;
+  border: 5px solid rgb(253, 173, 1);
+  position: absolute;
+  margin: auto;
+  height: 100px;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  border-bottom: 0;
+  transform-origin: bottom;
+  transform: rotate(-180deg);
+  left: -5px;
+  top: -5px;
+  z-index: 3;
+}
+
+.bar {
+  border: 3px solid white;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.sun {
+  padding: 0 1rem;
+}
+
+table {
+  width: 100%;
+}
+td {
+  padding-bottom: 0.5rem;
 }
